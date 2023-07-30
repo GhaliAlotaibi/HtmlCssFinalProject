@@ -182,76 +182,6 @@ body {
 .input-container3 input[type="password"]:valid ~ .underline {
   transform: scaleX(1);
 }
-
-.LoginSec .check {
-  cursor: pointer;
-  position: relative;
-  margin: auto;
-  display: inline;
-  left: 80%;
-  width: 18px;
-  height: 18px;
-  -webkit-tap-highlight-color: transparent;
-  transform: translate3d(0, 0, 0);
-}
-
-.LoginSec .check:before {
-  content: "";
-  position: absolute;
-  top: -15px;
-  left: -15px;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: rgba(34,50,84,0.03);
-  opacity: 0;
-  transition: opacity 0.2s ease;
-}
-
-.LoginSec .check svg {
-  position: relative;
-  z-index: 1;
-  fill: none;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke: #c8ccd4;
-  stroke-width: 1.5;
-  transform: translate3d(0, 0, 0);
-  transition: all 0.2s ease;
-}
-
-.LoginSec .check svg path {
-  stroke-dasharray: 60;
-  stroke-dashoffset: 0;
-}
-
-.LoginSec .check svg polyline {
-  stroke-dasharray: 22;
-  stroke-dashoffset: 66;
-}
-
-.LoginSec .check:hover:before {
-  opacity: 1;
-}
-
-.LoginSec .check:hover svg {
-  stroke: #4285f4;
-}
-
-.LoginSec #cbx:checked + .check svg {
-  stroke: #4285f4;
-}
-
-.LoginSec #cbx:checked + .check svg path {
-  stroke-dashoffset: 60;
-  transition: all 0.3s linear;
-}
-
-.LoginSec #cbx:checked + .check svg polyline {
-  stroke-dashoffset: 42;
-  transition: all 0.2s linear;
-  transition-delay: 0.15s;
-}
 .LoginSec h3 {
   position: relative;
   color: #D6D6D6;
@@ -267,30 +197,6 @@ body {
 .LoginSec a:hover {
   color: #FFD100 ;
 }
-.LoginSec button {
-  position: relative;
-  display: inline-block;
-  margin-left: 160px;
-  padding: 10px 20px;
-  text-align: center;
-  font-size: 18px;
-  letter-spacing: 1px;
-  text-decoration: none;
-  color: #D6D6D6;
-  background: transparent;
-  cursor: pointer;
-  transition: ease-out 0.5s;
-  border: 0.1px solid #FFD100;
-  border-radius: 10px;
-  box-shadow: inset 0 0 0 0 #FFD100;
-}
-.LoginSec button:hover {
-  color: #FFFDF7;
-  box-shadow: inset 0 -100px 0 0 #FFD100;
-}
-.LoginSec button:active{
-  transform: scale(0.9);
-}
 .LoginSec #button2 {
   position: relative;
   display: inline-block;
@@ -300,7 +206,7 @@ body {
   font-size: 18px;
   letter-spacing: 1px;
   text-decoration: none;
-  color: #D6D6D6;
+  color: #202020;
   background: transparent;
   cursor: pointer;
   transition: ease-out 0.5s;
@@ -310,7 +216,7 @@ body {
 }
 .LoginSec #button2:hover {
   color: #FFFDF7;
-  box-shadow: inset 0 -100px 0 0 #FFD100;
+  box-shadow: inset 0 -100px 0 0 #202020;
 }
 .LoginSec #button2:active{
   transform: scale(0.9);
