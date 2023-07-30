@@ -199,14 +199,19 @@ body {
 }
 .LoginSec #button2 {
   position: relative;
-  display: inline-block;
-  margin-left: 165px;
-  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
   text-align: center;
   font-size: 18px;
   letter-spacing: 1px;
   text-decoration: none;
   color: #202020;
+  max-width: 25%;
+  height: 50px;
   background: transparent;
   cursor: pointer;
   transition: ease-out 0.5s;
