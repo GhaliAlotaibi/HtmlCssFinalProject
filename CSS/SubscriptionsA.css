@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+
+body {
+    background-color:  rgb(255, 255, 255);
+    font-family: 'Markazi Text', serif;
+    font-weight: normal;
+    background-color: #222222;
+}
+
+#IMG1 {
+    max-width: 8%;
+    position: absolute;
+    margin-left: 90%; 
+}
+header{
+    width: 100%;
+    background-color: rgba(5,1,0,255);
+    height: 14.5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0%;
+    position: absolute;
+    background-color: #000000;
+    }
+    
+    header img{
+        transition: 0.5s;
+    }
+
+    header img:hover {
+        color: #ffffff;
+        transform: translate(0px,-5px);
+    }
+    
+    nav{
+        font-weight: bolder;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap:40px;
+        margin-top: 20px;
+        margin: 0% 30% 0% 0%;
+    }
+    
+    nav a{
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: lighter;
+        font-size:1.5em;
+        display: inline-block;
+        position: relative;
+        padding-bottom: 5px;
+    }
+      
+    nav a::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #FFD100;
+        transform-origin: bottom left;
+        transition: transform 0.30s ease-out;
+        
+    }
+      
+    nav a:hover::after {
+        text-decoration-color: #FFD100;
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+.dropbtn {
+    width: 80px;
+    background-color: #FFD100;
+    color: rgb(38, 35, 35);
+    padding: 12px;
+    padding-bottom: 40px;
+    font-size: 1.4em;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    color: white;
+    text-align: center;
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 80px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown:hover .dropdown-content {display: block; text-decoration-color: #FFD100;}
+
+  .dropdown:hover .dropbtn {background-color: grey; color: #000000;} 
+    
+    .button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 15px;
+        margin-right: 12%;
+    }
+
+    button {
+        width: 140px;
+        height: 50px;
+        border: 3px solid #000000;
+        border-radius: 25px;
+        transition: all 0.3s;
+        cursor: pointer;
+        background: rgb(255, 255, 255);
+        font-size: 1.2em;
+        font-weight: 550;
+        color: #000000;
+      }
+      
+      button:hover {
+        background: #000000;
+        color: white;
+        
+      }
+      a {
+        text-decoration: none;
+      }
+      nav a:hover {
+        text-decoration: none;
+        color: #ffffff;
+    }
+/* ------------------------------------------------------------------------------------------------------------- */
+/* FFD100 */
+
+      .Cardsfather {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+      }
+      .card {
+        display: block;
+        /* flex-direction: column;
+        align-items: center;
+        justify-content: space-around; */
+        width: 260px;
+        padding: 20px 1px;
+        margin: 10px 0;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+        box-shadow: 0 10px 15px -3px #C8A508,0 4px 6px -4px #C8A508;
+        border-radius: 10px;
+        background-color: #6B6ECC;
+        background: linear-gradient(45deg, #222222 50%, #FFD100 50%);
+        top: 250px;
+      }
+      
+      .content {
+        padding: 25px;
+      }
+      
+      .content .price {
+        color: white;
+        font-weight: 800;
+        font-size: 50px;
+        text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.42);
+      }
+      
+      .content .description {
+        color: rgba(255, 255, 255, 0.6);
+        margin-top: 10px;
+        font-size: 18px;
+      }
+      
+      .content .title {
+        font-weight: 800;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.64);
+        margin-top: 10px;
+        font-size: 25px;
+        letter-spacing: 1px;
+      }
+      
+      section button {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        border: none;
+        outline: none;
+        color: rgb(255 255 255);
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+        background-color: #FFD100;
+        border-radius: 0.5rem;
+        width: 50%;
+        text-shadow: 0px 2px 8px #222222;
+      }
+      section button:hover {
+        background-color: #222222;
+      }
+      .card2 {
+        display: block;
+        /* flex-direction: column;
+        align-items: center;
+        justify-content: space-around; */
+        width: 260px;
+        padding: 20px 1px;
+        margin: 10px 0;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+        box-shadow: 0 10px 15px -3px #C8A508,0 4px 6px -4px #C8A508;
+        border-radius: 10px;
+        background-color: #6B6ECC;
+        background: linear-gradient(45deg, #222222 50%, #FFD100 50%);
+        top: 250px;
+      }
+      
+
+      .card3 {
+        display: block;
+        /* flex-direction: column;
+        align-items: center;
+        justify-content: space-around; */
+        width: 260px;
+        padding: 20px 1px;
+        margin: 10px 0;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+        box-shadow: 0 10px 15px -3px #C8A508,0 4px 6px -4px #C8A508;
+        border-radius: 10px;
+        background-color: #6B6ECC;
+        background: linear-gradient(45deg, #222222 50%, #FFD100 50%);
+        top: 250px;
+      }
+      
+      
+      .card4 {
+        display: block;
+        /* flex-direction: column;
+        align-items: center;
+        justify-content: space-around; */
+        width: 260px;
+        padding: 20px 1px;
+        margin: 10px 0;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+        box-shadow: 0 10px 15px -3px #C8A508,0 4px 6px -4px #C8A508;
+        border-radius: 10px;
+        background-color: #6B6ECC;
+        background: linear-gradient(45deg, #222222 50%, #FFD100 50%);
+        top: 250px;
+      }
+      footer{
+        background-color:#000;
+        padding:10px 0px;
+        text-align:center;
+        max-width: 100%;
+        top: 209px;
+        position: relative;
+      }    
+      .img {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      align-items: center;
+      }
+      footer .row{
+      width:100%;
+      margin:1% 0%;
+      padding:0.6% 0%;
+      color:gray;
+      font-size:0.8em;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 5%;
+      }
+        
+      footer .row a{
+      text-decoration:none;
+      color:rgb(169, 157, 157);
+      transition:0.5s;
+      font-size: medium;
+      }
+        
+      footer .row a:hover{
+      color:#fff;
+      }
+        
+      footer .row ul{
+      width:100%;
+      }
+        
+      footer .row ul li{
+      display:inline-block;
+      margin:0px 30px;
+      }
+        
+      footer .row a i{
+      font-size:2em;
+      margin:0% 1%;
+      }
+        
+
+      footer{
+      text-align:center;
+
+      }
+      footer .row ul li{
+      display:block;
+      margin:10px 0px;
+      text-align:left;
+      }
+      footer .row a i{
+        margin:0% 3%;
+      }
