@@ -9,7 +9,6 @@ body {
     font-family: 'Markazi Text', serif;
     font-weight: normal;
 }
-
 #IMG1 {
     max-width: 8%;
     position: absolute;
@@ -115,7 +114,7 @@ header{
 
   .dropdown:hover .dropbtn {background-color: grey; color: #000000;} 
     
-    .button {
+    .buttonn {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -133,7 +132,8 @@ header{
         background: rgb(255, 255, 255);
         font-size: 1.2em;
         font-weight: 550;
-        color: #000000;
+        color: white;
+        
       }
       
       button:hover {
@@ -141,7 +141,8 @@ header{
         color: white;
       }
 
-      #button {
+
+      .button2  {
         width: 140px;
         height: 50px;
         border: 3px solid #000000;
@@ -154,9 +155,9 @@ header{
         color: rgb(255, 255, 255);
       }
       
-      #button:hover {
+      .button2:hover {
         background: #000000;
-        color: white;
+        color: #ffffff;
       }
 
     video {
