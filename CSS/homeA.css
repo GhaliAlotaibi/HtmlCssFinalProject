@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
 
 body {
     background-color:  rgb(255, 255, 255);
@@ -66,7 +67,7 @@ header{
         bottom: 0;
         left: 0;
         background-color: #FFD100;
-        transform-origin: bottom left;
+        transform-origin: bottom right;
         transition: transform 0.30s ease-out;
         
     }
@@ -74,7 +75,7 @@ header{
     nav a:hover::after {
         text-decoration-color: #FFD100;
         transform: scaleX(1);
-        transform-origin: bottom left;
+        transform-origin: bottom right;
     }
 
 .dropbtn {
