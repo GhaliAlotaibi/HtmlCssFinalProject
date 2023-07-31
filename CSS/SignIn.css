@@ -17,6 +17,7 @@ body {
     max-width: 30%;
     height: 500px;
     margin: auto;
+    align-content: center;
     background-color: #202020;
     box-shadow: #FFD100 0px 0px 0px 0.5px;
     border-radius: 25px;
