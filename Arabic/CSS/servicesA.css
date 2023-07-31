@@ -148,3 +148,9 @@ header{
         margin-left: 40px;
         margin-top: 40px;
        }
+       a:hover {
+        text-decoration: none;
+       }
+       a {
+        text-decoration: none;
+       }
