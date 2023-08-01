@@ -191,17 +191,19 @@ header{
         /* flex-direction: column;
         align-items: center;
         justify-content: space-around; */
-        width: 260px;
+        width: 320px;
+        height: 440px;
         padding: 20px 1px;
         margin: 10px 0;
         text-align: center;
         position: relative;
         cursor: pointer;
-        box-shadow: #FFD100 0px 1px 5px 0px;
+        box-shadow: #ffd00052 0px 1px 5px 0px;
         border-radius: 10px;
         background-color: #6B6ECC;
-        background: linear-gradient(45deg, #222222 50%, #FFD100 50%);
-        top: 250px;
+        background: linear-gradient(45deg, #222222 50%, #d0af19e0 50%);
+        transition: .5s;
+        top: 200px;
       }
       
       .content {
@@ -211,7 +213,7 @@ header{
       .content .price {
         color: white;
         font-weight: 800;
-        font-size: 50px;
+        font-size: 80px;
         text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.42);
       }
       
@@ -226,7 +228,7 @@ header{
         text-transform: uppercase;
         color: #fff;
         margin-top: 10px;
-        font-size: 25px;
+        font-size: 40px;
         letter-spacing: 1px;
       }
       
@@ -236,90 +238,25 @@ header{
         user-select: none;
         border: none;
         outline: none;
-        color: #fff;
+        color: #ffffff;
         text-transform: uppercase;
         font-weight: 700;
-        font-size: 1rem;
+        font-size: 1.4rem;
         padding: 0.75rem 1.5rem;
-        background-color: #FFD100;
+        background-color: #ffd0009a;
         border-radius: 0.5rem;
-        width: 50%;
-        text-shadow: 0px 2px 8px #222222;
+        width: 70%;
+        text-shadow: 0px 2px 8px #000000;
       }
       section button:hover {
-        background-color: #d0af19;
-        color: #373737;
+        background-color: #ffd00094;
+        color: #ffffff9a;
       }
       .card:hover {
-        transform: scaleX(1);
-        box-shadow: #FFD100 0px 2px 10px 0px;
+        transform: translate(0px,-30px);
+      }
 
-      }
-      .card2 {
-        display: block;
-        /* flex-direction: column;
-        align-items: center;
-        justify-content: space-around; */
-        width: 260px;
-        padding: 20px 1px;
-        margin: 10px 0;
-        text-align: center;
-        position: relative;
-        cursor: pointer;
-        box-shadow: #FFD100 0px 1px 5px 0px;
-        border-radius: 10px;
-        background-color: #6B6ECC;
-        background: linear-gradient(45deg, #222222 50%, #FFD100 50%);
-        top: 250px;
-      }
-      .card2:hover {
-        box-shadow: #FFD100 0px 2px 10px 0px;
-      }
-      
 
-      .card3 {
-        display: block;
-        /* flex-direction: column;
-        align-items: center;
-        justify-content: space-around; */
-        width: 260px;
-        padding: 20px 1px;
-        margin: 10px 0;
-        text-align: center;
-        position: relative;
-        cursor: pointer;
-        box-shadow: #FFD100 0px 1px 5px 0px;
-        border-radius: 10px;
-        background-color: #6B6ECC;
-        background: linear-gradient(45deg, #222222 50%, #FFD100 50%);
-        top: 250px;
-      }
-      .card3:hover {
-        box-shadow: #FFD100 0px 2px 10px 0px;
-
-      }
-      
-      .card4 {
-        display: block;
-        /* flex-direction: column;
-        align-items: center;
-        justify-content: space-around; */
-        width: 260px;
-        padding: 20px 1px;
-        margin: 10px 0;
-        text-align: center;
-        position: relative;
-        cursor: pointer;
-        box-shadow: #FFD100 0px 1px 5px 0px;
-        border-radius: 10px;
-        background-color: #6B6ECC;
-        background: linear-gradient(45deg, #222222 50%, #FFD100 50%);
-        top: 250px;
-      }
-      .card4:hover {
-        box-shadow: #FFD100 0px 2px 10px 0px;
-
-      }
       footer{
         background-color:#000;
         padding:10px 0px;
