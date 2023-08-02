@@ -69,6 +69,7 @@ header{
         /* display: inline-block; */
         position: relative;
         padding-bottom: 5px;
+        left: 45px;
     }
       
     nav a::after {
