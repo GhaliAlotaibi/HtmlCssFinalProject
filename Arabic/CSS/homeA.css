@@ -66,7 +66,7 @@ header{
         color: #ffffff;
         font-weight: lighter;
         font-size:2em;
-        display: inline-block;
+        /* display: inline-block; */
         position: relative;
         padding-bottom: 5px;
     }
@@ -92,7 +92,7 @@ header{
     }
 
     #lang {
-        width: 40px;
+        width: 30px;
     }
 
 .dropbtn {
@@ -103,11 +103,14 @@ header{
     padding-bottom: 40px;
     margin-bottom: 2%;
     font-size: 1.4em;
+    position: relative;
   }
 
   .dropdown {
     position: relative;
-    display: inline-block;
+    /* display: inline-block; */
+    right: 790px;
+
   }
 
   .dropdown-content {

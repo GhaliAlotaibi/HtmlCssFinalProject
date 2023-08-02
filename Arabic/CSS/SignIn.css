@@ -53,9 +53,9 @@ body {
     
     position: absolute;
     top: 0;
-    left: 0;
+    left: 60%;
     color: #D6D6D6;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease ;
     pointer-events: none;
   }
   
@@ -104,7 +104,7 @@ body {
   .input-container2 .label {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 70%;
     color: #D6D6D6;
     transition: all 0.3s ease;
     pointer-events: none;
