@@ -11,6 +11,10 @@ body {
     background-color: #ffd000b0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #IMG1 {
     max-width: 8%;
     position: absolute;
@@ -197,6 +201,22 @@ header{
     line-height: 54px;
 }
 
+.image button {
+  border: none;
+background-color: transparent;
+  text-align: center;
+    color: #FFD100;
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: auto;
+    /* right: 7%; */
+    top: 75%;
+    font-weight: lighter;
+    line-height: 54px;
+    right: 47%;
+}
+
 .image p {
     color: #ffffff;
     font-weight: lighter;
@@ -215,6 +235,23 @@ header{
     text-align: center;
     color: white;
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+}
+
+.image2 button {
+  border: none;
+background-color: transparent;
+  text-align: center;
+    color: #FFD100;
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: auto;
+    /* right: 7%; */
+    top: 72%;
+    font-weight: lighter;
+    line-height: 54px;
+    right: 47%;
+    filter: brightness(100%);
 }
 
 .image2 img{
@@ -327,7 +364,7 @@ footer{
     padding:10px 0px;
     text-align:center;
     max-width: 100%;
-    top: 10px;
+    top: px;
     height: 200px;
     position: relative;
   }    
