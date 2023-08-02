@@ -13,9 +13,10 @@ body {
 }
 
 #IMG1 {
-    max-width: 8%;
-    position: absolute;
-    margin-left: 90%; 
+    max-width: 40%;
+    position: relative;
+    margin-top:4% ;
+    margin-left:59% ;
 }
 header{
     width: 100%;
@@ -32,7 +33,7 @@ header{
     
     header img{
         transition: 0.5s;
-        margin-right: 5%;
+        /* margin-right: 5%; */
         padding-bottom: 20px;
     }
 
@@ -45,14 +46,18 @@ header{
         font-weight: bolder;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
-        gap:40px;
-        margin-top: 20px;
-        margin: 0% 25% 0% 0%;
+
+        gap:30px;
+        margin: 0% 0% 0% 0%;
     }
     
     nav a{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         text-decoration: none;
         color: #ffffff;
         font-weight: lighter;

@@ -1,18 +1,26 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Markazi Text', serif;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
 body {
-    background-color:  #302f2fe5;
+    background-color:  #222222;
     font-family: 'Markazi Text', serif;
     font-weight: normal;
 }
 
+#IMG1 {
+    max-width: 40%;
+    position: relative;
+    margin-top:7% ;
+    margin-left:60% ;
+    /* margin-left: 90%;  */
+}
 header{
     width: 100%;
     background-color: rgba(5,1,0,255);
-    height: 15vh;
+    height: 13.5vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -24,10 +32,8 @@ header{
     
     header img{
         transition: 0.5s;
-        padding-bottom: 10px;
-        max-width: 8%;
-        position: absolute;
-        margin-left: 85%; 
+        /* margin-right: 5%; */
+        padding-bottom: 20px;
     }
 
     header img:hover {
@@ -39,14 +45,18 @@ header{
         font-weight: bolder;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
-        gap:40px;
-        margin-top: 20px;
+
+        gap:30px;
         margin: 0% 0% 0% 0%;
     }
     
     nav a{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         text-decoration: none;
         color: #ffffff;
         font-weight: lighter;
@@ -75,6 +85,51 @@ header{
         transform: scaleX(1);
         transform-origin: bottom right;
     }
+    .button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 15px;
+        margin-right: 8%;
+        padding-bottom: 1px;
+    }
+
+    button {
+        font-weight: 900;
+        width: 140px;
+        height: 50px;
+        border: 3px solid #000000;
+        border-radius: 25px;
+        transition: all 0.3s;
+        cursor: pointer;
+        background: rgb(255, 255, 255);
+        font-size: 1.3em;
+        font-weight: 550;
+        color: #000000;
+      }
+      
+      button:hover {
+        background: #000000;
+        color: white;
+      }
+
+      #button {
+        width: 140px;
+        height: 50px;
+        border: 3px solid #000000;
+        border-radius: 25px;
+        transition: all 0.3s;
+        cursor: pointer;
+        background: rgb(0, 0, 0);
+        font-size: 1.2em;
+        font-weight: normal;
+        color: rgb(255, 255, 255);
+      }
+      
+      #button:hover {
+        background: #000000;
+        color: white;
+      }
 
     section {
         padding-top: 200px;
