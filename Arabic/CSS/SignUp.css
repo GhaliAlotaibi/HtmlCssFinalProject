@@ -1,21 +1,33 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Markazi Text', serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Markazi Text', serif;
 }
+
+/**  وهنا وضعنا خط الصفحة لجعله مريح للعين ولجمالية الموقع  **/
+
 @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+
+/**  غيرنا لون الخلفية **/
+
 body {
-    background-color: #222222 ;
+  background-color: #222222;
 }
+
+/*اللوقو*/
+
 #IMG1 {
   max-width: 40%;
   position: relative;
-  margin-top:7% ;
-  left: 110%;
+  margin-top: 7%;
+  margin-left: 100%;
 }
-header{
+
+/**  رأٍس الصفحة **/
+
+header {
   width: 100%;
-  background-color: rgba(5,1,0,255);
+  background-color: rgba(5, 1, 0, 255);
   height: 13.7vh;
   display: flex;
   flex-direction: row;
@@ -24,89 +36,101 @@ header{
   gap: 0%;
   position: absolute;
   background-color: #000000;
-  }
-  
-  header img{
-      transition: 0.5s;
-      /* margin-right: 5%; */
-      padding-bottom: 20px;
-  }
+}
 
-  header img:hover {
-      color: #ffffff;
-      transform: translate(0px,-5px);
-  }
-  
-  nav{
-      font-weight: bolder;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      gap:25px;
-      margin: 0.5% 0% 0% 0%;
-  }
-  
-  nav a{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      text-decoration: none;
-      color: #ffffff;
-      font-weight: lighter;
-      font-size:2em;
-      /* display: inline-block; */
-      position: relative;
-      padding-bottom: 5px;
-      left: 350px;
-  }
-    
-  nav a::after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      transform: scaleX(0);
-      height: 2px;
-      bottom: 0;
-      left: 0;
-      background-color: #FFD100;
-      transform-origin: bottom right;
-      transition: transform 0.30s ease-out;
-      
-  }
-    
-  nav a:hover::after {
-      text-decoration-color: #FFD100;
-      transform: scaleX(1);
-      transform-origin: bottom right;
-  }
+/** اللوقو  **/
+
+header img {
+  transition: 0.5s;
+  /* margin-right: 5%; */
+  padding-bottom: 20px;
+}
+
+header img:hover {
+  color: #ffffff;
+  transform: translate(0px, -5px);
+}
+
+/**  شريط صفحات الموقع **/
+
+nav {
+  font-weight: bolder;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin: 0.5% 0% 0% 0%;
+}
+
+/**  الكلام الي بالشريط **/
+
+nav a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: lighter;
+  font-size: 2em;
+  /* display: inline-block; */
+  position: relative;
+  padding-bottom: 5px;
+  left: 350px;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFD100;
+  transform-origin: bottom right;
+  transition: transform 0.30s ease-out;
+
+}
+
+nav a:hover::after {
+  text-decoration-color: #FFD100;
+  transform: scaleX(1);
+  transform-origin: bottom right;
+}
+
+/* بطاقة انشاء الحساب  */
+
 .LoginSec {
-    border-style:solid ;
-    max-width: 30%;
-    height: 500px;
-    margin: auto;
-    background-color: #202020;
-    box-shadow: #FFD100 0px 0px 0px 0.5px;
-    border-radius: 25px;
-    border-width: 0;
-    position: relative;
-    margin: 0% 0% 0% 35%;
-    top: 160px;
+  border-style: solid;
+  max-width: 30%;
+  height: 500px;
+  margin: auto;
+  background-color: #202020;
+  box-shadow: #FFD100 0px 0px 0px 0.5px;
+  border-radius: 25px;
+  border-width: 0;
+  position: relative;
+  margin: 0% 0% 0% 35%;
+  top: 160px;
 }
+
 .LoginSec h2 {
-    position: relative;
-    color: #D6D6D6;
-    font-weight: 100;
-    text-align: center;
-    font-size: 4em;
-    top: 5%;
+  position: relative;
+  color: #D6D6D6;
+  font-weight: 100;
+  text-align: center;
+  font-size: 4em;
+  top: 5%;
 }
+
 .input-container {
   position: relative;
   margin: 50px auto;
   width: 200px;
 }
+
 .input-container input {
   color: #D6D6D6;
 }
@@ -122,7 +146,7 @@ header{
 }
 
 .input-container .label {
-  
+
   position: absolute;
   top: 0;
   left: 68%;
@@ -131,8 +155,8 @@ header{
   pointer-events: none;
 }
 
-.input-container input[type="text"]:focus ~ .label,
-.input-container input[type="text"]:valid ~ .label {
+.input-container input[type="text"]:focus~.label,
+.input-container input[type="text"]:valid~.label {
   top: -20px;
   font-size: 16px;
   color: #D6D6D6;
@@ -149,16 +173,19 @@ header{
   transition: all 0.3s ease;
 }
 
-.input-container input[type="text"]:focus ~ .underline,
-.input-container input[type="text"]:valid ~ .underline {
+.input-container input[type="text"]:focus~.underline,
+.input-container input[type="text"]:valid~.underline {
   transform: scaleX(1);
 }
+
 /*---------------------------------------------------------------------------*/
+
 .input-container2 {
   position: relative;
   margin: 50px auto;
   width: 200px;
 }
+
 .input-container2 input {
   color: #D6D6D6;
 }
@@ -182,8 +209,8 @@ header{
   pointer-events: none;
 }
 
-.input-container2 input[type="email"]:focus ~ .label,
-.input-container2 input[type="email"]:valid ~ .label {
+.input-container2 input[type="email"]:focus~.label,
+.input-container2 input[type="email"]:valid~.label {
   top: -20px;
   font-size: 16px;
   color: #D6D6D6;
@@ -200,15 +227,17 @@ header{
   transition: all 0.3s ease;
 }
 
-.input-container2 input[type="email"]:focus ~ .underline,
-.input-container2 input[type="email"]:valid ~ .underline {
+.input-container2 input[type="email"]:focus~.underline,
+.input-container2 input[type="email"]:valid~.underline {
   transform: scaleX(1);
 }
+
 .input-container3 {
   position: relative;
   margin: 50px auto;
   width: 200px;
 }
+
 .input-container3 input {
   color: #D6D6D6;
 }
@@ -232,8 +261,8 @@ header{
   pointer-events: none;
 }
 
-.input-container3 input[type="password"]:focus ~ .label,
-.input-container3 input[type="password"]:valid ~ .label {
+.input-container3 input[type="password"]:focus~.label,
+.input-container3 input[type="password"]:valid~.label {
   top: -20px;
   font-size: 16px;
   color: #D6D6D6;
@@ -250,10 +279,11 @@ header{
   transition: all 0.3s ease;
 }
 
-.input-container3 input[type="password"]:focus ~ .underline,
-.input-container3 input[type="password"]:valid ~ .underline {
+.input-container3 input[type="password"]:focus~.underline,
+.input-container3 input[type="password"]:valid~.underline {
   transform: scaleX(1);
 }
+
 .LoginSec h3 {
   position: relative;
   color: #D6D6D6;
@@ -262,13 +292,16 @@ header{
   font-size: 1.4em;
   bottom: 3%;
 }
+
 .LoginSec a {
   text-decoration: none;
   color: #D6D6D6;
 }
+
 .LoginSec a:hover {
-  color: #FFD100 ;
+  color: #FFD100;
 }
+
 .LoginSec #button2 {
   position: relative;
   display: flex;
@@ -291,10 +324,12 @@ header{
   border-radius: 10px;
   box-shadow: inset 0 0 0 0 #FFD100;
 }
+
 .LoginSec #button2:hover {
   color: #FFFDF7;
   box-shadow: inset 0 -100px 0 0 #202020;
 }
-.LoginSec #button2:active{
+
+.LoginSec #button2:active {
   transform: scale(0.9);
 }

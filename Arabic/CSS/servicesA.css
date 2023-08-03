@@ -3,22 +3,39 @@
     padding: 0;
     font-family: 'Markazi Text', serif;
 }
+
+/**  وهنا وضعنا خط الصفحة لجعله مريح للعين ولجمالية الموقع  **/
+
 @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+
+/**  غيرنا لون الخلفية **/
+
 body {
-    background-color:  #222222;
-    font-family: 'Markazi Text', serif;
+    background-color: #222222;
     font-weight: normal;
 }
+
+/** غيرنا شكل التصفح وصار سلس اكثر وافضل  **/
+
+html {
+    scroll-behavior: smooth;
+}
+
+/** اللوقو  **/
 
 #IMG1 {
     max-width: 40%;
     position: relative;
-    margin-top:7% ;
-    margin-left:59% ;
-  }
-  header{
+    margin-top: 7%;
+    margin-left: 59%;
+}
+
+/**  رأٍس الصفحة **/
+
+header {
     width: 100%;
-    background-color: rgba(5,1,0,255);
+    background-color: rgba(5, 1, 0, 255);
     height: 13.7vh;
     display: flex;
     flex-direction: row;
@@ -27,69 +44,77 @@ body {
     gap: 0%;
     position: absolute;
     background-color: #000000;
-    }
-    
-    header img{
-        transition: 0.5s;
-        /* margin-right: 5%; */
-        padding-bottom: 20px;
-    }
-  
-    header img:hover {
-        color: #ffffff;
-        transform: translate(0px,-5px);
-    }
-    
-    nav{
-        font-weight: bolder;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap:25px;
-        margin: 0.5% 0% 0% 0%;
-    }
-    
-    nav a{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        color: #ffffff;
-        font-weight: lighter;
-        font-size:2em;
-        /* display: inline-block; */
-        position: relative;
-        padding-bottom: 5px;
-        left: 45px;
-    }
-      
-    nav a::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        transform: scaleX(0);
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: #FFD100;
-        transform-origin: bottom right;
-        transition: transform 0.30s ease-out;
-        
-    }
-      
-    nav a:hover::after {
-        text-decoration-color: #FFD100;
-        transform: scaleX(1);
-        transform-origin: bottom right;
-    }
-  
-    #lang {
-        width: 30px;
-    }
-  
-  .dropbtn {
+}
+
+/** اللوقو  **/
+
+header img {
+    transition: 0.5s;
+    /* margin-right: 5%; */
+    padding-bottom: 20px;
+}
+
+header img:hover {
+    color: #ffffff;
+    transform: translate(0px, -5px);
+}
+
+/**  شريط صفحات الموقع **/
+
+nav {
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 0.5% 0% 0% 0%;
+}
+
+/**  الكلام الي بالشريط **/
+
+nav a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 2em;
+    /* display: inline-block; */
+    position: relative;
+    padding-bottom: 5px;
+    left: 45px;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFD100;
+    transform-origin: bottom right;
+    transition: transform 0.30s ease-out;
+
+}
+
+nav a:hover::after {
+    text-decoration-color: #FFD100;
+    transform: scaleX(1);
+    transform-origin: bottom right;
+}
+
+/**  الكوكب الصغير الي حطيناه عشان تغير اللغة **/
+
+#lang {
+    width: 30px;
+}
+
+.dropbtn {
     width: 80px;
     background-color: #000000;
     color: rgb(38, 35, 35);
@@ -98,16 +123,16 @@ body {
     margin-bottom: 2%;
     font-size: 1.4em;
     position: relative;
-  }
-  
-  .dropdown {
+}
+
+.dropdown {
     position: relative;
     display: inline-block;
     right: 760px;
-  
-  }
-  
-  .dropdown-content {
+
+}
+
+.dropdown-content {
     color: white;
     text-align: left;
     display: none;
@@ -115,20 +140,20 @@ body {
     background-color: #000000;
     min-width: 80px;
     border-radius: 5px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-  }
-  
-  .dropdown-content a {
+}
+
+.dropdown-content a {
     color: rgb(255, 255, 255);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     position: relative;
     left: 10px;
-  }
-  
-  .dropdown-content a::after {
+}
+
+.dropdown-content a::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -139,142 +164,159 @@ body {
     background-color: #FFD100;
     transform-origin: bottom right;
     transition: transform 0.30s ease-out;
-    
-  }
-  
-  .dropdown-content a:hover::after {
+
+}
+
+.dropdown-content a:hover::after {
     text-decoration-color: #FFD100;
     transform: scaleX(1);
     transform-origin: bottom right;
-  }
-  
-  
-  .dropdown:hover .dropdown-content {display: block; text-decoration-color: #FFD100;}
-  
-  .dropdown:hover .dropbtn {background-color: rgb(0, 0, 0); color: #000000;} 
-    .button {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 15px;
-        margin-right: 8%;
-        padding-bottom: 10px;
-    }
-  
-    button {
-        font-weight: 900;
-        width: 140px;
-        height: 50px;
-        border: 3px solid #000000;
-        border-radius: 25px;
-        transition: all 0.3s;
-        cursor: pointer;
-        background: rgb(255, 255, 255);
-        font-size: 1.3em;
-        font-weight: 550;
-        color: #000000;
-        margin: 5.9% 0% 0% 0%;
-      }
-      
-      button:hover {
-        background: #000000;
-        color: white;
-      }
-  
-      #button {
-        width: 140px;
-        height: 50px;
-        border: 3px solid #000000;
-        border-radius: 25px;
-        transition: all 0.3s;
-        cursor: pointer;
-        background: rgb(0, 0, 0);
-        font-size: 1.2em;
-        font-weight: normal;
-        color: rgb(255, 255, 255);
-      }
-      
-      #button:hover {
-        background: #000000;
-        color: white;
-      }
-  
+}
 
-    section {
-        padding-top: 200px;
-        padding-bottom: 100px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    
-    .card {
-        width: 300px;
-        height: 400px;
-        border-radius: 50px;
-        background-color: #000000;
-        padding: 2rem 1.5rem;
-        transition: box-shadow .3s ease, transform .2s ease;
-       }
-       
-       .card-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transition: transform .2s ease, opacity .2s ease;
-       }
-       
-       /*Image*/
-       .card-avatar {
-        --size: 260px;
-        background: linear-gradient(to top, #FFD100 0%, #ffb700 100%);
-        width: var(--size);
-        height: var(--size);
-        border-radius: 60%;
-        transition: transform .2s ease;
-        margin-bottom: 4rem;
-       }
 
-       .card-avatar img {
-        margin-top: 2rem;
-        margin-left: 1.5rem;
-       }
-       
-       /*Text*/
-       .card-title {
-        color: #ffffff;
-        font-size: 5em;
-        font-weight: 600;
-        line-height: 2rem;
-       }
-       
-       .card-subtitle {
-        color: #859ba8;
-        font-size: 0.8em;
-       }
-       
-       /*Hover*/
-       .card:hover {
-        box-shadow: 0 8px 60px #FFD100;
-       }
+.dropdown:hover .dropdown-content {
+    display: block;
+    text-decoration-color: #FFD100;
+}
 
-       .card-avatar:hover {
-        transform: scale(1.050);
-       }
+.dropdown:hover .dropbtn {
+    background-color: rgb(0, 0, 0);
+    color: #000000;
+}
 
-       #card1 {
-        margin-left: 40px;
-       }
+/**  ازرار تسجيل الخروج والدخول وانشاء الحساب **/
 
-       #card2 {
-        margin-left: 40px;
-        margin-top: 40px;
-       }
-       a:hover {
-        text-decoration: none;
-       }
-       a {
-        text-decoration: none;
-       }
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    margin-right: 8%;
+    padding-bottom: 10px;
+}
+
+button {
+    font-weight: 900;
+    width: 140px;
+    height: 50px;
+    border: 3px solid #000000;
+    border-radius: 25px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    font-size: 1.3em;
+    font-weight: 550;
+    color: #000000;
+    margin: 5.9% 0% 0% 0%;
+}
+
+button:hover {
+    background: #000000;
+    color: white;
+}
+
+#button {
+    width: 140px;
+    height: 50px;
+    border: 3px solid #000000;
+    border-radius: 25px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    font-size: 1.2em;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+}
+
+#button:hover {
+    background: #000000;
+    color: white;
+}
+
+/** محتوى الصفحة **/
+
+section {
+    padding-top: 200px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/** البطاقات المتخصصة بخدمات الموقع **/
+
+.card {
+    width: 300px;
+    height: 400px;
+    border-radius: 50px;
+    background-color: #000000;
+    padding: 2rem 1.5rem;
+    transition: box-shadow .3s ease, transform .2s ease;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform .2s ease, opacity .2s ease;
+}
+
+/*الافتار او الصورة التي في البطاقة*/
+
+.card-avatar {
+    --size: 260px;
+    background: linear-gradient(to top, #FFD100 0%, #ffb700 100%);
+    width: var(--size);
+    height: var(--size);
+    border-radius: 60%;
+    transition: transform .2s ease;
+    margin-bottom: 4rem;
+}
+
+.card-avatar img {
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+}
+
+/*العنوان*/
+
+.card-title {
+    color: #ffffff;
+    font-size: 5em;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+.card-subtitle {
+    color: #859ba8;
+    font-size: 0.8em;
+}
+
+/*تغير البطاقة عند وضع الفأرة على الزر*/
+
+.card:hover {
+    box-shadow: 0 8px 60px #FFD100;
+}
+
+.card-avatar:hover {
+    transform: scale(1.050);
+}
+
+#card1 {
+    margin-left: 40px;
+}
+
+#card2 {
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}

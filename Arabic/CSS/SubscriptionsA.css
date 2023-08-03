@@ -1,28 +1,36 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Markazi Text', serif;
-
-    
+  margin: 0;
+  padding: 0;
+  font-family: 'Markazi Text', serif;
 }
+
+/**  وهنا وضعنا خط الصفحة لجعله مريح للعين ولجمالية الموقع  **/
+
 @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
 
+/**  غيرنا لون الخلفية **/
+
 body {
-    background-color:  rgb(255, 255, 255);
-    font-family: 'Markazi Text', serif;
-    font-weight: normal;
-    background-color: #222222;
+  background-color: rgb(255, 255, 255);
+  font-family: 'Markazi Text', serif;
+  font-weight: normal;
+  background-color: #222222;
 }
+
+/** اللوقو  **/
 
 #IMG1 {
   max-width: 40%;
   position: relative;
-  margin-top:7% ;
-  margin-left:59% ;
+  margin-top: 7%;
+  margin-left: 59%;
 }
-header{
+
+/**  رأٍس الصفحة **/
+
+header {
   width: 100%;
-  background-color: rgba(5,1,0,255);
+  background-color: rgba(5, 1, 0, 255);
   height: 13.7vh;
   display: flex;
   flex-direction: row;
@@ -31,67 +39,75 @@ header{
   gap: 0%;
   position: absolute;
   background-color: #000000;
-  }
-  
-  header img{
-      transition: 0.5s;
-      /* margin-right: 5%; */
-      padding-bottom: 20px;
-  }
+}
 
-  header img:hover {
-      color: #ffffff;
-      transform: translate(0px,-5px);
-  }
-  
-  nav{
-      font-weight: bolder;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      gap:25px;
-      margin: 0.5% 0% 0% 0%;
-  }
-  
-  nav a{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      text-decoration: none;
-      color: #ffffff;
-      font-weight: lighter;
-      font-size:2em;
-      /* display: inline-block; */
-      position: relative;
-      padding-bottom: 5px;
-      left: 45px;
-  }
-    
-  nav a::after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      transform: scaleX(0);
-      height: 2px;
-      bottom: 0;
-      left: 0;
-      background-color: #FFD100;
-      transform-origin: bottom right;
-      transition: transform 0.30s ease-out;
-      
-  }
-    
-  nav a:hover::after {
-      text-decoration-color: #FFD100;
-      transform: scaleX(1);
-      transform-origin: bottom right;
-  }
+/**  اللوقو **/
 
-  #lang {
-      width: 30px;
-  }
+header img {
+  transition: 0.5s;
+  /* margin-right: 5%; */
+  padding-bottom: 20px;
+}
+
+header img:hover {
+  color: #ffffff;
+  transform: translate(0px, -5px);
+}
+
+/**  شريط صفحات الموقع **/
+
+nav {
+  font-weight: bolder;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin: 0.5% 0% 0% 0%;
+}
+
+/**  الكلام الي بالشريط **/
+
+nav a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: lighter;
+  font-size: 2em;
+  /* display: inline-block; */
+  position: relative;
+  padding-bottom: 5px;
+  left: 45px;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFD100;
+  transform-origin: bottom right;
+  transition: transform 0.30s ease-out;
+
+}
+
+nav a:hover::after {
+  text-decoration-color: #FFD100;
+  transform: scaleX(1);
+  transform-origin: bottom right;
+}
+
+/**  الكوكب الصغير الي حطيناه عشان تغير اللغة **/
+
+#lang {
+  width: 30px;
+}
 
 .dropbtn {
   width: 80px;
@@ -119,7 +135,7 @@ header{
   background-color: #000000;
   min-width: 80px;
   border-radius: 5px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -143,7 +159,7 @@ header{
   background-color: #FFD100;
   transform-origin: bottom right;
   transition: transform 0.30s ease-out;
-  
+
 }
 
 .dropdown-content a:hover::after {
@@ -153,272 +169,301 @@ header{
 }
 
 
-.dropdown:hover .dropdown-content {display: block; text-decoration-color: #FFD100;}
+.dropdown:hover .dropdown-content {
+  display: block;
+  text-decoration-color: #FFD100;
+}
 
-.dropdown:hover .dropbtn {background-color: rgb(0, 0, 0); color: #000000;} 
-  .button {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      gap: 15px;
-      margin-right: 8%;
-      padding-bottom: 10px;
-  }
+.dropdown:hover .dropbtn {
+  background-color: rgb(0, 0, 0);
+  color: #000000;
+}
 
-  button {
-      font-weight: 900;
-      width: 140px;
-      height: 50px;
-      border: 3px solid #000000;
-      border-radius: 25px;
-      transition: all 0.3s;
-      cursor: pointer;
-      background: rgb(255, 255, 255);
-      font-size: 1.3em;
-      font-weight: 550;
-      color: #000000;
-      margin: 5.9% 0% 0% 0%;
-    }
-    
-    button:hover {
-      background: #000000;
-      color: white;
-    }
+/**  ازرار تسجيل الخروج والدخول وانشاء الحساب **/
 
-    #button {
-      width: 140px;
-      height: 50px;
-      border: 3px solid #000000;
-      border-radius: 25px;
-      transition: all 0.3s;
-      cursor: pointer;
-      background: rgb(0, 0, 0);
-      font-size: 1.2em;
-      font-weight: normal;
-      color: rgb(255, 255, 255);
-    }
-    
-    #button:hover {
-      background: #000000;
-      color: white;
-    }
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+  margin-right: 8%;
+  padding-bottom: 10px;
+}
 
-        
-      a {
-        text-decoration: none;
-      }
-      nav a:hover {
-        text-decoration: none;
-        color: #ffffff;
-    }
+button {
+  font-weight: 900;
+  width: 140px;
+  height: 50px;
+  border: 3px solid #000000;
+  border-radius: 25px;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: rgb(255, 255, 255);
+  font-size: 1.3em;
+  font-weight: 550;
+  color: #000000;
+  margin: 5.9% 0% 0% 0%;
+}
+
+button:hover {
+  background: #000000;
+  color: white;
+}
+
+#button {
+  width: 140px;
+  height: 50px;
+  border: 3px solid #000000;
+  border-radius: 25px;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: rgb(0, 0, 0);
+  font-size: 1.2em;
+  font-weight: normal;
+  color: rgb(255, 255, 255);
+}
+
+#button:hover {
+  background: #000000;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 /* ------------------------------------------------------------------------------------------------------------- */
-/* FFD100 */
 
-      .Cardsfather {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        align-content: center;
-      }
-      .card {
-        display: block;
-        /* flex-direction: column;
+/* وهنا وضعنا بطاقات الااشتراكات الخاصة بموقعنا موقع عونيّ */
+
+.Cardsfather {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+
+.card {
+  display: block;
+  /* flex-direction: column;
         align-items: center;
         justify-content: space-around; */
-        width: 320px;
-        height: 440px;
-        padding: 20px 1px;
-        margin: 10px 0;
-        text-align: center;
-        position: relative;
-        cursor: pointer;
-        box-shadow: #ffd00052 0px 1px 5px 0px;
-        border-radius: 10px;
-        background-color: #6B6ECC;
-        background: linear-gradient(45deg, #222222 50%, #d0af19e0 50%);
-        transition: .5s;
-        top: 180px;
-        
-      }
-      
-      .content {
-        padding: 25px;
-      }
-      
-      .content .price {
-        color: white;
-        font-weight: 800;
-        font-size: 80px;
-        text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.42);
-      }
-      
-      .content .description {
-        color: rgba(255, 255, 255, 0.6);
-        margin-top: 10px;
-        font-size: 18px;
-      }
-      
-      .content .title {
-        font-weight: 800;
-        text-transform: uppercase;
-        color: #fff;
-        margin-top: 10px;
-        font-size: 40px;
-        letter-spacing: 1px;
-      }
-      
-      section button {
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-        border: none;
-        outline: none;
-        color: #ffffff;
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 1.4rem;
-        padding: 0.75rem 1.5rem;
-        background-color: #ffd0009a;
-        border-radius: 0.5rem;
-        width: 70%;
-        text-shadow: 0px 2px 8px #000000;
-        margin-top: 20px;
-      }
-      section button:hover {
-        background-color: #ffd00094;
-        color: #ffffff9a;
-      }
-      .card:hover {
-        transform: translate(0px,-30px);
-      }
+  width: 320px;
+  height: 440px;
+  padding: 20px 1px;
+  margin: 10px 0;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  box-shadow: #ffd00052 0px 1px 5px 0px;
+  border-radius: 10px;
+  background-color: #6B6ECC;
+  background: linear-gradient(45deg, #222222 50%, #d0af19e0 50%);
+  transition: .5s;
+  top: 180px;
 
-      footer{
-        background-color:#000;
-        padding:10px 0px;
-        text-align:center;
-        max-width: 100%;
-        top: 10px;
-        height: 200px;
-        position: relative;
-      }    
-      
-      .img {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      align-items: center;
-      }
-    
-      footer .row{
-      width:100%;
-      margin:1% 0%;
-      padding:0.6% 0%;
-      color:gray;
-      font-size:2em;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      gap: 5%;
-      }
-        
-      footer .row a{
-      text-decoration:none;
-      color:rgb(169, 157, 157);
-      transition:0.5s;
-      font-size: 0.75em;  }
-    
-      footer .row a:hover{
-      color:#fff;
-      }
-        
-      footer .row ul{
-      width:100%;
-      }
-        
-      footer .row ul li{
-      display:inline-block;
-      margin:0px 30px;
-      }
-        
-      footer .row a i{
-      font-size:4em;
-      margin:0% 1%;
-      }
-        
-    
-      footer{
-      text-align:center;
-    
-      }
-      footer .row ul li{
-      display:block;
-      margin:10px 0px;
-      text-align:left;
-      font-size: 3em;
-      }
-      footer .row a i{
-        margin:0% 3%;
-        font-size: 3em;
-      }
-    
-      .socialContainer {
-        width: 52px;
-        height: 52px;
-        border-radius: 50%;
-        background-color: rgb(44, 44, 44);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-        transition-duration: .3s;
-      }
-      /* instagram*/
-      .containerOne:hover {
-        background-color: #d62976;
-        transition-duration: .3s;
-      }
-      /* twitter*/
-      .containerTwo:hover {
-        background-color: #00acee;
-        transition-duration: .3s;
-      }
-      /* linkdin*/
-      .containerThree:hover {
-        background-color: #0072b1;
-        transition-duration: .3s;
-      }
-      /* Whatsapp*/
-      .containerFour:hover {
-        background-color: #128C7E;
-        transition-duration: .3s;
-      }
-      
-      .socialContainer:active {
-        transform: scale(0.9);
-        transition-duration: .3s;
-      }
-      
-      .socialSvg {
-        width: 17px;
-      }
-      
-      .socialSvg path {
-        fill: rgb(255, 255, 255);
-      }
-      
-      .socialContainer:hover .socialSvg {
-        animation: slide-in-top 0.3s both;
-      }
-      
-      @keyframes slide-in-top {
-        0% {
-          transform: translateY(-50px);
-          opacity: 0;
-        }
-      
-        100% {
-          transform: translateY(0);
-          opacity: 1;
-        }
-      }
+}
+
+.content {
+  padding: 25px;
+}
+
+.content .price {
+  color: white;
+  font-weight: 800;
+  font-size: 80px;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.42);
+}
+
+.content .description {
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.content .title {
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 10px;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+/* الازرار التي مكانها داخل وسم سكشن */
+
+section button {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.4rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #ffd0009a;
+  border-radius: 0.5rem;
+  width: 70%;
+  text-shadow: 0px 2px 8px #000000;
+  margin-top: 20px;
+}
+
+section button:hover {
+  background-color: #ffd00094;
+  color: #ffffff9a;
+}
+
+.card:hover {
+  transform: translate(0px, -30px);
+}
+
+/** الشريط الي في نهاية الصفحة المختص بوسائل التواصل الاجتماعي  **/
+
+footer {
+  background-color: #000;
+  padding: 10px 0px;
+  text-align: center;
+  max-width: 100%;
+  top: 10px;
+  height: 200px;
+  position: relative;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+footer .row {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: gray;
+  font-size: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+footer .row a {
+  text-decoration: none;
+  color: rgb(169, 157, 157);
+  transition: 0.5s;
+  font-size: 0.75em;
+}
+
+footer .row a:hover {
+  color: #fff;
+}
+
+footer .row ul {
+  width: 100%;
+}
+
+footer .row ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+footer .row a i {
+  font-size: 4em;
+  margin: 0% 1%;
+}
+
+
+footer {
+  text-align: center;
+
+}
+
+footer .row ul li {
+  display: block;
+  margin: 10px 0px;
+  text-align: left;
+  font-size: 3em;
+}
+
+footer .row a i {
+  margin: 0% 3%;
+  font-size: 3em;
+}
+
+/**  ايقونات برامج التواصل الاجتماعي **/
+
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: .3s;
+}
+
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+/* انيميشن الايقونات */
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
