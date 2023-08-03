@@ -8,10 +8,79 @@ body {
     background-color: #222222 ;
 }
 #IMG1 {
-    max-width: 12%;
-    margin-right:40px;
-    margin-top: 20px; 
+  max-width: 40%;
+  position: relative;
+  margin-top:7% ;
+  left: 110%;
 }
+header{
+  width: 100%;
+  background-color: rgba(5,1,0,255);
+  height: 13.7vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0%;
+  position: absolute;
+  background-color: #000000;
+  }
+  
+  header img{
+      transition: 0.5s;
+      /* margin-right: 5%; */
+      padding-bottom: 20px;
+  }
+
+  header img:hover {
+      color: #ffffff;
+      transform: translate(0px,-5px);
+  }
+  
+  nav{
+      font-weight: bolder;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap:25px;
+      margin: 0.5% 0% 0% 0%;
+  }
+  
+  nav a{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: lighter;
+      font-size:2em;
+      /* display: inline-block; */
+      position: relative;
+      padding-bottom: 5px;
+      left: 350px;
+  }
+    
+  nav a::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #FFD100;
+      transform-origin: bottom right;
+      transition: transform 0.30s ease-out;
+      
+  }
+    
+  nav a:hover::after {
+      text-decoration-color: #FFD100;
+      transform: scaleX(1);
+      transform-origin: bottom right;
+  }
 .LoginSec {
     border-style:solid ;
     max-width: 30%;
@@ -21,6 +90,9 @@ body {
     box-shadow: #FFD100 0px 0px 0px 0.5px;
     border-radius: 25px;
     border-width: 0;
+    position: relative;
+    margin: 0% 0% 0% 35%;
+    top: 160px;
 }
 .LoginSec h2 {
     position: relative;
